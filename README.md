@@ -14,9 +14,28 @@ Usage:
     ```
     - Neural Monkey
     ```sh
-    python python score.py -f NeuralMonkey -a test_data/nm.alignment.npy -s test_data/nm.bpe.en -t test_data/nm.out.bpe.lv
+    python score.py -f NeuralMonkey -a test_data/nm.alignment.npy -s test_data/nm.bpe.en -t test_data/nm.out.bpe.lv
     ```
     - Hybrid
     ```sh
     python hybrid.py -nem test_data/nem.out.ali.lv -nm test_data/nm.alignment.npy -s test_data/nm.bpe.en -t test_data/nm.out.bpe.lv
     ```
+
+Parameters for score.py:
+
+| Option | Description                   | Required 		 | Possible Values 			 		| Default Value  |
+|:------:|:------------------------------|:-----------------:|:---------------------------------|:---------------|
+| -a     | Input alignment file			 | Yes     			 | Path to file						|				 |
+| -s     | Source sentence subword units | For Neural Monkey | Path to file			  	 		|				 |
+| -t     | Target sentence subword units | For Neural Monkey | Path to file			  	 		|				 |
+| -f     | Where are the alignments from | No     	 		 | 'NeuralMonkey', 'Nematus' 		| 'NeuralMonkey' |
+
+
+Parameters for hybrid.py:
+
+| Option | Description                                 | Required   | Possible Values |
+|:------:|:--------------------------------------------|:----------:|:----------------|
+| -nm    | Nematus alignment file		               | yes	    | Path to file	  |
+| -nem   | Neural Monkey alignment file	               | yes	    | Path to file	  |
+| -s     | Neural Monkey source sentence subword units | yes		| Path to file	  |
+| -t     | Neural Monkey target sentence subword units | yes 		| Path to file	  |
