@@ -89,10 +89,15 @@ def main(argv):
             RevEnt2 = thecode.getRevEnt(ali2)
             Mult2 = CP2 + Ent2 + RevEnt2
             
-            if Mult1 > Mult2:
-                outfile.write(' '.join(tgt1).replace("@@ ", "") + '\n')
-            else:
+            if Mult1 > -1.5 and Mult2 < -1.5:
                 outfile.write(' '.join(tgt2).replace("@@ ", "").replace(" <EOS>", "") + '\n')
+            elif Mult2 > -1.5 and Mult1 < -1.5:
+                outfile.write(' '.join(tgt1).replace("@@ ", "") + '\n')
+            elif Mult2 > Mult1:
+                outfile.write(' '.join(tgt2).replace("@@ ", "").replace(" <EOS>", "") + '\n')
+            else:
+                outfile.write(' '.join(tgt1).replace("@@ ", "") + '\n')
+
 
 if __name__ == "__main__":
 
