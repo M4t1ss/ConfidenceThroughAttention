@@ -102,7 +102,9 @@ if __name__ == "__main__":
     try:
         args.frm
     except NameError:
-        outputType = "NeuralMonkey"
+        args.frm = "NeuralMonkey"
+    if args.frm == None:
+        args.frm = "NeuralMonkey"
      
     try:
         if args.frm == "NeuralMonkey":
