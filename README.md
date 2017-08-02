@@ -39,3 +39,21 @@ Parameters for hybrid.py:
 | -nem   | Neural Monkey alignment file	               | yes	    | Path to file	  |
 | -s     | Neural Monkey source sentence subword units | yes		| Path to file	  |
 | -t     | Neural Monkey target sentence subword units | yes 		| Path to file	  |
+
+	
+Publications
+---------
+
+If you use this tool, please cite the following paper:
+
+Matīss Rikters and Mark Fishel (2017). "[Confidence Through Attention.](http://aamt.info/app-def/S-102/mtsummit/2017/research-track/)" In Proceedings of the 16th Machine Translation Summit (MT Summit 2017) (2017).
+
+```
+@inproceedings{Rikters-Fishel2017MTSummit,
+	author = {Rikters, Matīss and Fishel, Mark},
+	booktitle={Proceedings of the 16th Machine Translation Summit (MT Summit 2017)},
+	title = {{Confidence Through Attention}},
+	address={Nagoya, Japan},
+	year = {2017}
+}
+```
