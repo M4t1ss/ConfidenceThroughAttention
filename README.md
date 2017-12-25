@@ -35,8 +35,8 @@ Parameters for hybrid.py:
 
 | Option | Description                                 | Required   | Possible Values |
 |:------:|:--------------------------------------------|:----------:|:----------------|
-| -nm    | Nematus alignment file		               | yes	    | Path to file	  |
-| -nem   | Neural Monkey alignment file	               | yes	    | Path to file	  |
+| -nem    | Nematus alignment file		               | yes	    | Path to file	  |
+| -nm   | Neural Monkey alignment file	               | yes	    | Path to file	  |
 | -s     | Neural Monkey source sentence subword units | yes		| Path to file	  |
 | -t     | Neural Monkey target sentence subword units | yes 		| Path to file	  |
 
